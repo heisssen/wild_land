@@ -30,6 +30,6 @@
   ],
   "url": "",
   "manifest": "https://raw.githubusercontent.com/heisssen/wild_land/refs/heads/main/system.json",
-  "download": "",
+  "download": "https://github.com/heisssen/wild_land/archive/refs/tags/v1.0.0.zip",
   "license": "LICENSE.txt"
 }
