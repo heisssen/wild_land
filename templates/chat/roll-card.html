@@ -3,26 +3,26 @@
         <h3>{{title}}</h3>
     </header>
     <div class="card-content">
-        <p><strong>{{localize "DIKEPOLE.Result"}}:</strong> {{outcome}}</p>
-        <p><strong>{{localize "DIKEPOLE.Highest"}}:</strong> {{highestResult}}</p>
+        <div class="result-line">
+            <strong>{{localize "DIKEPOLE.Result"}}:</strong> 
+            <span class="outcome">{{outcome}}</span>
+        </div>
+        <div class="result-line">
+            <strong>{{localize "DIKEPOLE.Highest"}}:</strong>
+            <span class="highest">{{highestResult}}</span>
+        </div>
         {{#if hasTwist}}
-        <p class="twist">{{localize "DIKEPOLE.Twist"}}</p>
+        <div class="twist">{{localize "DIKEPOLE.Twist"}}</div>
         {{/if}}
         <div class="dice-roll">
             <div class="dice-result">
-                <div class="dice-formula">{{formula}}</div>
                 <div class="dice-tooltip">
-                    <section class="tooltip-part">
-                        <div class="dice">
-                            <ol class="dice-rolls">
-                                {{#each results as |r|}}
-                                <li class="roll die d6">{{r}}</li>
-                                {{/each}}
-                            </ol>
-                        </div>
-                    </section>
+                    <ol class="dice-rolls">
+                        {{#each results as |r|}}
+                        <li class="roll die d6 {{#if r.isCut}}cut{{/if}}">{{r.value}}</li>
+                        {{/each}}
+                    </ol>
                 </div>
-                <h4 class="dice-total">{{total}}</h4>
             </div>
         </div>
     </div>
