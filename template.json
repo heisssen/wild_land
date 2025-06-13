@@ -1,0 +1,77 @@
+{
+  "Actor": {
+    "types": ["character", "npc", "camp"],
+    "character": {
+      "biography": "",
+      "counters": {
+        "steppe": { "value": 0, "track": { "value": 0, "max": 3 } },
+        "ruin": { "value": 0, "track": { "value": 0, "max": 3 } }
+      }
+    },
+    "npc": {
+      "biography": "",
+      "threat_track": { "value": 0, "max": 10 }
+    },
+    "camp": {
+      "description": "",
+      "ratings": {
+        "security": { "value": 2, "max": 4 },
+        "speed": { "value": 2, "max": 4 },
+        "supply": { "value": 2, "max": 4 },
+        "cohesion": { "value": 2, "max": 4 }
+      },
+      "cargo": { "value": 0, "max": 6 },
+      "danger_counter": { "value": 0, "max": 10 }
+    }
+  },
+  "Item": {
+    "types": ["skill", "knowledge", "aspect", "drive", "bond", "equipment", "shard", "map", "faction", "project"],
+    "skill": {
+      "description": "",
+      "rating": 0
+    },
+    "knowledge": {
+      "description": "",
+      "rating": 0
+    },
+    "aspect": {
+      "description": "",
+      "abilities": "",
+      "track": { "value": 0, "max": 8 },
+      "is_temporary": false,
+      "is_injury": false
+    },
+    "drive": {
+      "description": ""
+    },
+    "bond": {
+      "description": "",
+      "target_name": "",
+      "rating": 0
+    },
+    "equipment": {
+      "description": "",
+      "tags": "",
+      "quantity": 1
+    },
+    "shard": {
+      "description": "",
+      "type": "steppe",
+      "tags": ""
+    },
+    "map": {
+      "description": "",
+      "tags": ""
+    },
+    "faction": {
+      "description": "",
+      "ideal": "",
+      "key_people": "",
+      "assets": ""
+    },
+    "project": {
+      "description": "",
+      "progress": { "value": 0, "max": 6 }
+    }
+  }
+}

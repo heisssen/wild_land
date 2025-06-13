@@ -1,0 +1,23 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Назва аспекту"/></h1>
+    </div>
+  </header>
+  <div class="sheet-body">
+    <div class="form-group">
+      <label>Трек</label>
+      <div class="form-fields">
+        <label>Поточний:</label>
+        <input type="number" name="system.track.value" value="{{item.system.track.value}}"/>
+        <label>Макс:</label>
+        <input type="number" name="system.track.max" value="{{item.system.track.max}}"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Здібності</label>
+      <textarea name="system.abilities" rows="5">{{item.system.abilities}}</textarea>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,100 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Main Sheet Styles */
+.dike-pole.sheet.actor {
+  font-family: 'Vollkorn', serif;
+  background-image: url('../assets/paper-background.webp'); /* Додайте своє фонове зображення */
+  background-size: cover;
+  color: #3a2e24;
+}
+
+.dike-pole .window-content {
+  background: none;
+}
+
+.dike-pole .sheet-header {
+  font-family: 'Marck Script', cursive;
+  border-bottom: 2px solid #6b5a4b;
+}
+
+.dike-pole .sheet-tabs {
+  border-bottom: 2px solid #6b5a4b;
+}
+
+.dike-pole .sheet-tabs > .item {
+  font-family: 'Marck Script', cursive;
+  font-size: 18px;
+}
+
+.dike-pole h3 {
+  font-family: 'Marck Script', cursive;
+  font-size: 24px;
+  border-bottom: 1px solid #9a8a7b;
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.dike-pole .sheet-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 5px;
+}
+
+.dike-pole .main-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dike-pole .side-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Item List Styles */
+.dike-pole .item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dike-pole .item-list .item {
+  padding: 3px;
+  border-bottom: 1px dashed #c9b8a8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Skills */
+.dike-pole .skills-list .skill-name {
+  cursor: pointer;
+  font-weight: bold;
+}
+.dike-pole .skills-list .skill-name:hover {
+  color: #8c1c0d;
+  text-shadow: 0 0 5px #c9b8a8;
+}
+.dike-pole .skills-list .skill-rating {
+  flex: 0 0 50px;
+  text-align: center;
+}
+.dike-pole .skills-list .skill-rating input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  background-color: rgba(107, 90, 75, 0.1);
+}
+
+/* Counters & Tracks */
+.dike-pole .counter-track {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dike-pole .counter-track input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,29 @@
+<div class="dike-pole chat-card">
+    <header class="card-header">
+        <h3>{{title}}</h3>
+    </header>
+    <div class="card-content">
+        <p><strong>{{localize "DIKEPOLE.Result"}}:</strong> {{outcome}}</p>
+        <p><strong>{{localize "DIKEPOLE.Highest"}}:</strong> {{highestResult}}</p>
+        {{#if hasTwist}}
+        <p class="twist">{{localize "DIKEPOLE.Twist"}}</p>
+        {{/if}}
+        <div class="dice-roll">
+            <div class="dice-result">
+                <div class="dice-formula">{{formula}}</div>
+                <div class="dice-tooltip">
+                    <section class="tooltip-part">
+                        <div class="dice">
+                            <ol class="dice-rolls">
+                                {{#each results as |r|}}
+                                <li class="roll die d6">{{r}}</li>
+                                {{/each}}
+                            </ol>
+                        </div>
+                    </section>
+                </div>
+                <h4 class="dice-total">{{total}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

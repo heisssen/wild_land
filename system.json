@@ -1,0 +1,35 @@
+{
+  "id": "dike-pole",
+  "title": "Дике Поле",
+  "description": "Система для настільної рольової гри 'Дике Поле' про химерні подорожі безмежним Степом.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors": [],
+  "esmodules": [
+    "modules/main.js"
+  ],
+  "styles": [
+    "css/dike-pole.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "uk",
+      "name": "Ukrainian",
+      "path": "lang/uk.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "м",
+  "primaryTokenAttribute": "counters.ruin.value",
+  "secondaryTokenAttributes": [
+    "counters.steppe.value"
+  ],
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}

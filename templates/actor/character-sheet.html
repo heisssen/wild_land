@@ -1,0 +1,56 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Ім'я персонажа"/></h1>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="main">{{localize "DIKEPOLE.Tabs.Main"}}</a>
+    <a class="item" data-tab="equipment">{{localize "DIKEPOLE.Tabs.Equipment"}}</a>
+    <a class="item" data-tab="personal">{{localize "DIKEPOLE.Tabs.Personal"}}</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab main" data-group="primary" data-tab="main">
+        <div class="main-col">
+            <div class="skills-box">
+                <h3>{{localize "DIKEPOLE.Skills"}}</h3>
+                <ul class="item-list skills-list">
+                    {{#each actor.skills as |skill id|}}
+                    <li class="item skill" data-item-id="{{skill._id}}">
+                        <a class="skill-name">{{skill.name}}</a>
+                        <span class="skill-rating">
+                            <input type="text" name="items.{{skill._id}}.system.rating" value="{{skill.system.rating}}" data-dtype="Number"/>
+                        </span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="knowledge-box">
+                <h3>{{localize "DIKEPOLE.Knowledge"}}</h3>
+                </div>
+        </div>
+        <div class="side-col">
+            <div class="counters-box">
+                <h3>{{localize "DIKEPOLE.Counters"}}</h3>
+                <div class="counter">
+                    <h4>{{localize "DIKEPOLE.Steppe"}}</h4>
+                    </div>
+                <div class="counter">
+                    <h4>{{localize "DIKEPOLE.Ruin"}}</h4>
+                    </div>
+            </div>
+            <div class="aspects-box">
+                <h3>{{localize "DIKEPOLE.Aspects"}}</h3>
+                </div>
+        </div>
+    </div>
+
+    <div class="tab equipment" data-group="primary" data-tab="equipment">
+        </div>
+    <div class="tab personal" data-group="primary" data-tab="personal">
+        </div>
+  </section>
+</form>
