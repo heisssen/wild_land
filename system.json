@@ -29,7 +29,12 @@
     "counters.steppe.value"
   ],
   "url": "",
+<<<<<<< HEAD
   "manifest": "",
   "download": "",
+=======
+  "manifest": "https://raw.githubusercontent.com/heisssen/wild_land/refs/heads/main/system.json",
+  "download": "https://github.com/heisssen/wild_land/archive/refs/tags/v1.0.0.zip",
+>>>>>>> f0ff03e08ad0b92f912673886afef0e6ef5915df
   "license": "LICENSE.txt"
 }
